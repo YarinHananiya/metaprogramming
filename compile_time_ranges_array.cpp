@@ -1,9 +1,13 @@
+/*******************************************************************************
+ * create array of ranges in compile-time
+ * Author: Yarin Hananiya
+ * ****************************************************************************/
 #include <array> // std::array
 #include <tuple> // std::tuple
 #include <utility> // std::integer_sequence
 #include <type_traits> // std::is_arithmetic_v
 
-#include "utils.hpp" // utils::are_same, utils::is_tuple
+#include "../utils.hpp" // utils::are_same, utils::is_tuple
 
 template<typename T>
 constexpr auto make_pairs_tuple(T first, T second) 
